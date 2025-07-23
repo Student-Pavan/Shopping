@@ -4,33 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shopping Checklist</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/263/263115.png" type="image/png">
   <style>
     body {
-      font-family: sans-serif;
-      background: #fdfdfd;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fdfcfb, #e2d1c3);
       padding: 20px;
       max-width: 600px;
       margin: auto;
+      animation: fadeIn 1s ease-in-out;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     h1 {
       text-align: center;
-      color: #444;
+      color: #2e7d32;
+      margin-bottom: 20px;
+      font-size: 2em;
     }
+
     label {
       display: block;
-      padding: 8px;
-      margin-bottom: 6px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background: #fff;
+      padding: 10px;
+      margin-bottom: 8px;
+      border: 1px solid #c8e6c9;
+      border-radius: 10px;
+      background: #e8f5e9;
+      transition: all 0.3s ease;
+      cursor: pointer;
     }
+
+    label:hover {
+      background-color: #c8e6c9;
+      transform: scale(1.02);
+    }
+
     input[type="checkbox"] {
       margin-right: 10px;
+      accent-color: #2e7d32;
+      transform: scale(1.3);
     }
   </style>
 </head>
 <body>
-  <h1>🛒 Shopping Checklist</h1>
+  <h1>🛍️ Shopping Checklist</h1>
   <form>
     <label><input type="checkbox" /> Bombai Pindi</label>
     <label><input type="checkbox" /> Maidha Pindi</label>
